@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<title>Fiber Art</title>
+
+<head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="star_shine.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Portfolio</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+
+<li class="dropdown">
+<a href="javascript:void(0)"
+class="dropbtn">Portfolio</a>
+<div class="dropdown-content">
+<a href="art471.html">ART 471</a>
+<a href="photography.html">Photography</a>
+<a class="active" href="fiberarts.html">Fiber Art</a>
+<a href="drawings.html">Drawing</a>
+</div>
+</li>
+
+<li style="float:right"><a href="clickifurcool.html">click if ur cool</a></li>
+</ul>
+
+<h2>Fiber Art</h2>
+<h3>Here is my Fibers work.</h3>
+
+<video width="" height="500" controls class="center">
+<source src="final_360.mp4" type="video/mp4">
+</video>
+
+<h3>Artist Statement</h3>
+<p class="fibersstate" style=text-align:center>Dichotomy of Woman, 2025 <br>
+scraps from childhood quilt, fabric, wool roving, stuffing, cardboard, embroidery floss, beads, buttons, charms, guitar picks, metal pin backings <br><br></p>
+
+<p class="fibersstate">Dichotomy of Woman explores seemingly opposing manifestations of femininity–the coexistence of the so-called “masculine” and “feminine” in a woman. Overt femininity is often demeaned in our society. When I was young, things commonly associated with young girls were derided: Justin Bieber, One Direction, Barbies, painted fingernails, and more. To do something “like a girl” is to do it poorly, implicitly positioning cisgendered men and boys as more naturally skilled. This is harmful to both men and women, creating negative stereotypes and robbing us of our freedom of expression.
+As a child, I was a tomboy. I was often mistaken for a boy; I had short hair, my favorite color was blue, and I despised wearing dresses. I did not want to live my life “like a girl.” This rejection of the feminine was subconscious, but led me to push away music, activities, and clothing associated with girls my age. <br><br>
+This piece recognizes my affinity for the “masculine”–my interest in heavy metal music, electric guitar, and dark, moody color palettes. Simultaneously, it allows me to reclaim the “feminine” side of myself, unleashing my repressed “girly girl.” Using scrap fabric from a childhood quilt, I collaged friendship bracelets, beads, buttons, and charms to evoke the sense of girlhood. On the opposing hemisphere of the piece, I embroidered metal pin backings, guitar picks, and lightning bolt charms on the piece to represent my passions more strongly tied to masculinity. The two pieces were stuffed and joined together to form a globe with “night” and “day” sides. <br>
+</p>
+
+<!-- IMAGE GALLERY --!>
+
+<div class="image-gallery">
+<div class="column">
+<img src="final_front.jpeg" alt=""
+onclick="openModal();currentSlide(1)" class="hover-shadow">
+
+</div>
+
+<div class="column">
+
+<img src="final_back.jpeg" alt=""
+onclick="openModal();currentSlide(2)" class="hover-shadow">
+
+<img src="starter_projects.jpeg" alt=""
+onclick="openModal();currentSlide(4)" class="hover-shadow">
+
+</div>
+
+<div class="column">
+
+<img src="final_side.jpeg" alt=""
+onclick="openModal();currentSlide(3)" class="hover-shadow">
+
+</div>
+
+</div>
+
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times; </span>
+<div class="modal-content">
+
+<div class="mySlides">
+<div class="numbertext">1 / 4</div>
+<img src="final_front.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">2 / 4</div>
+<img src="final_back.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">3 / 4</div>
+<img src="final_side.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 4</div>
+<img src="starter_projects.jpeg" style="width:100%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<!--Captions--!>
+
+<div class="column">
+<img class="demo cursor" src:"final_front.jpeg";
+onclick="currentSlide(1)" alt="Final Project: The Duality of Woman">
+</div>
+
+<div class="column">
+<img class="demo cursor" src:"final_back.jpeg";
+onclick="currentSlide(2)" alt="DoW back">
+</div>
+
+<div class="column">
+<img class="demo cursor" src:"final_side.jpeg";
+onclick="currentSlide(3)" alt="DoW Side">
+</div>
+
+<div class="column">
+<img class="demo cursor" src:"starter_projects.jpeg";
+onclick="currentSlide(3)" alt="Practice Projects">
+</div>
+
+<!--MODAL JAVA--!>
+<script>
+function openModal(){
+document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal(){
+document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++){
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+
+</html>

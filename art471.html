@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<title>ART 471</title>
+
+<head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="star_shine.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Portfolio</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+
+<li class="dropdown">
+<a href="javascript:void(0)"
+class="dropbtn">Portfolio</a>
+<div class="dropdown-content">
+<a class="active" href="art471.html">ART 471</a>
+<a href="photography.html">Photography</a>
+<a href="fiberarts.html">Fiber Art</a>
+<a href="drawings.html">Drawing</a>
+</div>
+</li>
+
+<li style="float:right"><a href="clickifurcool.html">click if ur cool</a></li>
+</ul>
+
+<h1>ART 471 - ''Crossroads''</h1>
+
+<!--project description/artist statement--!>
+
+<h3>Project Statement</h3>
+<p style=text-align:center class="projstatement">This project represents how many Americans are forced to drive, and therefore forced to contribute to carbon emissions due to poor public transit infrastructure. I combine cyanotypes and anthotypes of the same image to represent the natural and the unnatural, demonstrating the hyposcrisy of being an environmentalist but being forced to drive a non-electric vehicle everyday.   I used spinach and tumeric as the dyes for the anthotypes, which will eventually fade away. On top of them, I traced the image by embroidering flourescent colors, remiscent of traffic cones and reflective gear. As the antotypes fade, they will leave only the obnoxious human-made colors behind. The cyanotypes are attached to the anthotypes with warp string, and a mini weaving is created between the two images using the twining stitch. The double yellow lines connecting the two sets of images represents the lines on a road.</p>
+
+<!-- IMAGE GALLERY --!>
+
+<div class="image-gallery">
+<div class="column">
+<img src="IMG_3015.jpg" alt=""
+onclick="openModal();currentSlide(1)" class="hover-shadow">
+
+<img src="IMG_3027.jpg" alt=""
+onclick="openModal();currentSlide(4)" class="hover-shadow">
+
+<img src="IMG_3031.jpg" alt=""
+onclick="openModal();currentSlide(7)" class="hover-shadow">
+
+
+</div>
+
+<div class="column">
+
+<img src="IMG_yass.jpg" alt=""
+onclick="openModal();currentSlide(2)" class="hover-shadow">
+
+<img src="IMG_3025.jpg" alt=""
+onclick="openModal();currentSlide(5)" class="hover-shadow">
+
+<img src="IMG_3032.jpg" alt=""
+onclick="openModal();currentSlide(8)" class="hover-shadow">
+
+
+</div>
+
+<div class="column">
+
+<img src="IMG_3019.jpg" alt=""
+onclick="openModal();currentSlide(3)" class="hover-shadow">
+
+<img src="IMG_3029.jpg" alt=""
+onclick="openModal();currentSlide(6)" class="hover-shadow">
+
+<img src="IMG_3021.jpg" alt=""
+onclick="openModal();currentSlide(9)" class="hover-shadow">
+
+</div>
+
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times; </span>
+<div class="modal-content">
+
+<div class="mySlides">
+<div class="numbertext">1 / 9</div>
+<img src="IMG_3015.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">2 / 9</div>
+<img src="IMG_yass.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">3 / 9</div>
+<img src="IMG_3019.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 9</div>
+<img src="IMG_3027.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">5 / 9</div>
+<img src="IMG_3025.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">6 / 9</div>
+<img src="IMG_3029.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">7 / 9</div>
+<img src="IMG_3031.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">8 / 9</div>
+<img src="IMG_3032.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">9 / 9</div>
+<img src="IMG_3021.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+
+<!--MODAL JAVA--!>
+<script>
+function openModal(){
+document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal(){
+document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++){
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+
+</html>

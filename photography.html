@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang=en>
+<title>Photography</title>
+
+<head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="star_shine.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<h1>Portfolio</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="aboutme.html">About Me</a></li>
+
+<li class="dropdown">
+<a href="javascript:void(0)"
+class="dropbtn">Portfolio</a>
+<div class="dropdown-content">
+<a href="art471.html">ART 471</a>
+<a class="active" href="photography.html">Photography</a>
+<a href="fiberarts.html">Fiber Art</a>
+<a href="drawings.html">Drawing</a>
+</div>
+</li>
+
+<li style="float:right"><a href="clickifurcool.html">click if ur cool</a></li>
+</ul>
+
+<h2>Photography</h2>
+
+<h3>Assorted photos taken for Digital Photography, Analog Photography, and in my own time</h3>
+
+<br>
+
+<!--Photo Gallery--!>
+
+<div class="image-gallery">
+<div class="column">
+<img src="Monochromatic 2.jpg" alt=""
+onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+
+<img src="Halloween Feast copy.jpg" alt=""
+onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+
+<img src="mirror face.png" alt=""
+onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+
+<img src="oceanbetter.jpg" alt=""
+onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+
+</div>
+
+<div class="column">
+<img src="Triad 2.jpg" alt=""
+onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+
+<img src="Beach Sundown.jpg" alt=""
+onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+
+<img src="cousin it.jpg" alt=""
+onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+
+<img src="dat ass.png" alt=""
+onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+
+<img src="seagullawesome.jpg" alt=""
+onclick="openModal();currentSlide(14)" class="hover-shadow cursor">
+
+
+</div>
+
+<div class="column">
+<img src="prettysky.jpeg" alt=""
+onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+
+<img src="Beach Sunset 1.jpg" alt=""
+onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+
+<img src="Tracy copy.jpg" alt=""
+onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+
+<img src="HAND mirror.png" alt=""
+onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+
+<img src="nubblebetter.jpg" alt=""
+onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+
+<img src="/adalei.jpg" alt=""
+onclick="openModal();currentSlide(15)" class="hover-shadow cursor">
+</div>
+
+</div>
+
+<!--LIGHTBOX--!>
+
+<div id="myModal" class="modal">
+<span class="close cursor" onclick="closeModal()">&times; </span>
+<div class="modal-content">
+
+<div class="mySlides">
+<div class="numbertext">1 / 15</div>
+<img src="Monochromatic 2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">2 / 15</div>
+<img src="Triad 2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">3 / 15</div>
+<img src="prettysky.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">4 / 15</div>
+<img src="Beach Sundown.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">5 / 15</div>
+<img src="Beach Sunset 1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">6 / 15</div>
+<img src="Tracy copy.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">7 / 15</div>
+<img src="Halloween Feast copy.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">8 / 15</div>
+<img src="cousin it.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">9 / 15</div>
+<img src="HAND mirror.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">10 / 15</div>
+<img src="mirror face.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">11 / 15</div>
+<img src="dat ass.png" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">12 / 15</div>
+<img src="nubblebetter.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">13 / 15</div>
+<img src="oceanbetter.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">14 / 15</div>
+<img src="seagullawesome.jpg" style="width:100%">
+</div>
+
+<div class="mySlides">
+<div class="numbertext">15 / 15</div>
+<img src="adalei.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div class="caption-container">
+<p id="caption"></p>
+</div>
+
+<!--CAPTIONS--!>
+
+<div class="column">
+<img class="demo cursor" src="Monochromatic 2.jpg";
+onclick="currentSlide(1)" alt="Monochromatic color scheme">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="Triad 2.jpg";
+onclick="currentSlide(2)" alt="Triad color scheme">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="prettysky.jpeg";
+onclick="currentSlide(3)" alt="A cool ass sunset">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="Beach Sundown.jpg";
+onclick="currentSlide(4)" alt="Car driving down Ocean Ave at twilight">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="Beach Sunset 1.jpg";
+onclick="currentSlide(5)" alt="Tidepool at sunset">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="Tracy copy.jpg";
+onclick="currentSlide(6)" alt="80's Tracy">
+
+<div class="column">
+<img class="demo cursor" src="Halloween Feast copy.jpg";
+onclick="currentSlide(7)" alt="Halloween Feast">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="cousin it.jpg";
+onclick="currentSlide(8)" alt="Cousin Lydia dressed as Cousin It">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="HAND mirror.png";
+onclick="currentSlide(9)" alt="Self Love Series - 1">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="mirror face.png";
+onclick="currentSlide(10)" alt="Self Love Series - 2">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="dat ass.png";
+onclick="currentSlide(11)" alt="Self Love Series - 3">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="nubblebetter.jpg";
+onclick="currentSlide(12)" alt="Nubble Light">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="oceanbetter.jpg";
+onclick="currentSlide(13)" alt="Ocean at Sohier Park">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="seagullawesome.jpg";
+onclick="currentSlide(14)" alt="Seagull Awesome">
+</div>
+
+<div class="column">
+<img class="demo cursor" src="adalei.jpg";
+onclick="currentSlide(15)" alt="Adalei">
+</div>
+
+</div>
+
+<!--MODAL JAVA--!>
+<script>
+function openModal(){
+document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal(){
+document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n){
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n){
+showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("demo");
+var captionText = document.getElementById("caption");
+if (n > slides.length) {slideIndex = 1}
+if (n < 1) {slideIndex = slides.length}
+for (i = 0; i < slides.length; i++){
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++){
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+</html>
